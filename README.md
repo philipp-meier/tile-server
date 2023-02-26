@@ -27,6 +27,8 @@ Statistics from a local [bombardier](https://github.com/codesenberg/bombardier) 
 ```
 ./bombardier https://localhost/5/15/19.png -d 120s --insecure
 
+Bombarding https://localhost:443/5/15/19.png for 2m0s using 125 connection(s)
+Done!
 Statistics        Avg      Stdev        Max
   Reqs/sec     36734.64    4022.55   47849.41
   Latency        3.40ms     1.08ms   122.90ms
