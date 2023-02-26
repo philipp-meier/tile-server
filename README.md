@@ -17,5 +17,11 @@ Simple tile server for `.mbtiles`-files written in C# with minimal APIs.
 ## Stress testing
 Install [k6](https://k6.io/docs/get-started/installation/) by Grafana Labs and run the following command: `k6 run test/k6.js`
 
-## Used mbtiles file:
+## Operations
+
+[dotnet-counters](https://learn.microsoft.com/en/dotnet/core/diagnostics/dotnet-counters) and [dotnet-dump](https://learn.microsoft.com/en/dotnet/core/diagnostics/dotnet-dump) are available in the `/tools`-folder of the tile-server. `/tools/dotnet-counters monitor -p 1` can provide a high-level overview of the applications health (CPU usage, GC- and thread pool information,...).
+
+`/tools/dotnet-dump collect -p 1` can be used to create (and also analyze) dumps.
+
+## Used mbtiles file
 https://ftp.gwdg.de/pub/misc/openstreetmap/openandromaps/world/OAM-World-1-8-min-J80.mbtiles
