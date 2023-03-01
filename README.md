@@ -3,7 +3,14 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/philipp-meier/tile-server/blob/main/LICENSE)  
 Simple tile server for `.mbtiles`-files written in C# with minimal APIs.
 
-## Setup
+## Quickstart
+#### Development environment
+Run `dotnet run` in the `src` folder to start the application.
+
+#### Standalone (Release)
+Download the latest standalone.zip from the [release page](https://github.com/philipp-meier/tile-server/releases), place your `.mbtiles`-file in the "data"-folder, rename it to `map_data.mbtiles` and start the .NET application. The tiles are available at `https://localhost:5001/{z}/{x}/{y}.png`.
+
+## Docker setup
 1. Place your .mbtiles file in the `./data` directory (`mkdir data`) and rename it to `map_data.mbtiles`.
 2. Generate a (trusted) https certificate and place it in the `https` folder:  
 `dotnet dev-certs https -ep ./https/aspnetapp.pfx -p <password>`  
