@@ -5,8 +5,8 @@
 *.user
 *.userosscache
 *.sln.docstates
-Properties
 data/map_data.mbtiles
+tools
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

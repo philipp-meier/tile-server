@@ -1,0 +1,14 @@
+﻿{
+  "profiles": {
+    "tile_server": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7058;http://localhost:5296",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_MBTILES_PATH": "../data/map_data.mbtiles"
+      }
+    }
+  }
+}
