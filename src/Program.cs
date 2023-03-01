@@ -1,11 +1,12 @@
 using System.Data;
 using Microsoft.Data.Sqlite;
 
+const string mbtilesFileName = "map_data.mbtiles";
 var mbtilesPath = Environment.GetEnvironmentVariable("ASPNETCORE_MBTILES_PATH") ??
-    Path.Combine("data", "map_data.mbtiles");
+    Path.Combine("data", mbtilesFileName);
 
 if (!File.Exists(mbtilesPath))
-    throw new FileNotFoundException(mbtilesPath);
+    throw new FileNotFoundException($"Required .mbtiles-file \"{mbtilesPath}\" not found.");
 
 var builder = WebApplication.CreateBuilder(args);
 
