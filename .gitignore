@@ -5,6 +5,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+.idea
 data/map_data.mbtiles
 tools
 
