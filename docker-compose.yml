@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.4"
 
 services:
   app:
@@ -13,6 +13,7 @@ services:
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_Kestrel__Certificates__Default__Password=<password>
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+      - TileServer__MbTilesPath=./data/map_data.mbtiles
     volumes:
       - ./data:/app/data
       - ./https:/https
